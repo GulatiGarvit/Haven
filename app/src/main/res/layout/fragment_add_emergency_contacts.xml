@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".AddEmergencyContactsFragment">
+
+    <TextView
+        android:id="@+id/contacts_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="26dp"
+        android:text="@string/emergency_contact_header"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="26sp"/>
+
+    <LinearLayout
+        android:id="@+id/illustration_linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="26dp"
+        android:layout_below="@id/contacts_header"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/contact_illustration"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/illustration_contacts"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/contact_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/white"
+            android:paddingHorizontal="10dp"
+            android:text="@string/emergency_contact_body"
+            android:textAlignment="center"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/illustration_linear_layout"
+        android:layout_above="@id/add_contact_linear_layout"
+        android:paddingVertical="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/add_contact_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="26dp"
+        android:paddingVertical="20dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/add_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/welcomescreen_button_background"
+            android:textColor="@android:color/white"
+            android:text="Add a contact"
+            android:backgroundTint="@android:color/holo_green_dark"/>
+
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/welcomescreen_button_background"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@android:color/transparent"
+            android:textColor="@android:color/white"
+            android:text="Continue"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</RelativeLayout>

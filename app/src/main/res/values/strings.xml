@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Safety</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cam_header">Camera</string>
+    <string name="cam_body">Your camera is used only and only when you are in an emergency to update your emergency contacts with photos that are captured through your device every 5 seconds (customisable). We never access your camera in background until in an emergency.</string>
+    <string name="gps_header">GPS</string>
+    <string name="gps_body">Your GPS info is used to alert you for any nearby emergencies and to update your emergency contacts with your live location in case of an emergency. Your location is updated every 30 minutes in the background if you have emergency alerts enabled.</string>
+    <string name="emergency_message">I am in emergency! You are my emergency contact and hence seeing this message. Follow the link below to track my location live and see image updates\n</string>
+    <string name="emergency_contact_body">These are the contacts that will be notified in case of an emergency and will receive live location and sensor updates from you. You can select as many as 5 emergency contacts. 2 are necessary</string>
+    <string name="emergency_contact_header">Add Emergency Contacts</string>
+    <string name="storage_header">Storage</string>
+    <string name="storage_body">Files like images and audio clippings are stored in HQ locally so that if your phone is found by someone, it can be made out what happened to you. Also required for basic functionality of the application.</string>
+
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+
+    <string name="back4app_app_id">t38CR0MtdAgvQ9Rc35TjE8T0oDQoQ9ytpXcXYHHl</string>
+    <string name="back4app_client_key">6az99qSHRv5zKov0GPj0Q4BOc9PKoC2UUmRagGHb</string>
+</resources>
